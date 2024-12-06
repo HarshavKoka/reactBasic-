@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
+  const [count, setCount] = useState(0)
+  const inc = () => {
+    setCount((prev) => prev + 10)
+  }
+  console.log(count)
   return (
-    <div>App</div>
+    <>
+      <div>{count}</div>
+      <button onClick={inc}>click me</button>
+    </>
   )
 }
 
