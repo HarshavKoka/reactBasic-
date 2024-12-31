@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 
 const App = () => {
   const [count, setCount] = useState(0)
-  const inc = () => {
-    setCount((prev) => prev + 1)
+  const dec = () => {
+    setCount((prev) => prev - 1)
   }
   console.log(count)
   return (
     <>
       <div>{count}</div>
-      <button onClick={inc}>click me</button>
+      <button onClick={dec}>click me</button>
     </>
   )
 }
